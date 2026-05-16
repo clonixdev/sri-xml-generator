@@ -5,7 +5,7 @@ Paquete para la generación de archivos XML validos para la facturación electr�
 ## Instalación
 
 ```bash
-composer require dazza-dev/sri-xml-generator
+composer require clonixdev/sri-xml-generator
 ```
 
 ## Contribuciones

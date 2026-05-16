@@ -1,5 +1,6 @@
 {
-  "name": "dazza-dev/sri-xml-generator",
+  "name": "clonixdev/sri-xml-generator",
+  "version": "1.0.1",
   "description": "Generador XML para facturación electronica de ecuador SRI.",
   "keywords": [
     "sri",

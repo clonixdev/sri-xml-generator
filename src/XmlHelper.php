@@ -31,7 +31,9 @@ class XmlHelper
         try {
             $DOMDocumentXML = new DOMDocument;
             $DOMDocumentXML->preserveWhiteSpace = false;
-            $DOMDocumentXML->formatOutput = true;
+            // formatOutput en true rompe la firma XAdES: saveXML() introduce espacios entre
+            // etiquetas y el digest del comprobante deja de coincidir con validadores (SRI).
+            $DOMDocumentXML->formatOutput = false;
             $DOMDocumentXML->loadXML($xml);
 
             return $DOMDocumentXML;
